@@ -1,5 +1,7 @@
 import os
+from tkinter import *
 from datetime import date
+
 def kuuPäev():
     täna = date.today()
     sisu = "Sissekanne "
@@ -79,6 +81,14 @@ def main():
             
         else:
             print("Vigane valik. Proovi uuesti :)")
-        
+def guimain():
+    laud = Tk()
+    laud.attributes("-fullscreen", True)
+    laud.geometry("800x600")
+    pealkirimain = Label(text = "Sinu Päevik")
+    nupp1 = Button()
+    pealkirimain.pack()
+    laud.mainloop()
+    
 if __name__ == "__main__":
-    main()
+    guimain()
