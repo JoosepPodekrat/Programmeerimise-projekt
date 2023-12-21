@@ -32,7 +32,7 @@ class Guimain():
         self.toggle_ontume = tk.Button(root,text="Dark mode", command=lambda: self.vahetateema())
         self.toggle_ontume.grid(row=5, column=0, padx=10, pady=10, sticky="W")
         
-        self.button_loetlefailid = tk.Button(root,text="Loetlefailid", command=lambda: self.loetlefailid())
+        self.button_loetlefailid = tk.Button(root,text="Loetle failid", command=lambda: self.loetlefailid())
         self.button_loetlefailid.grid(row=1, column=0, padx=10, pady=10, sticky=tk.W)
         
         self.button_avafail_start = tk.Button(root,text="Ava fail", command=lambda: self.avafail_start())
